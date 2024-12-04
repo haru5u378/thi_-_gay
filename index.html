@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Thi é gay?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .sim {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .nao {
+            background-color: #f44336;
+            color: white;
+        }
+        .erro {
+            color: red;
+            font-size: 18px;
+        }
+        .resposta {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>O Thi é gay? 🤔</h1>
+        <button class="sim" onclick="simResposta()">Sim 💅</button>
+        <button class="sim" onclick="simResposta()">Sim 😎</button>
+        <p id="mensagemErro" class="erro"></p>
+        <p id="mensagemFinal" class="resposta"></p>
+    </div>
+
+    <script>
+        function simResposta() {
+            document.getElementById('mensagemErro').style.display = 'none';
+            document.getElementById('mensagemFinal').innerText = 'Todo mundo já sabia! 😜🎉';
+            document.querySelector('h1').innerText = 'Sabiaaa! 😏💅';
+            document.querySelector('.sim').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
